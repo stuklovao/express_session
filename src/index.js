@@ -22,7 +22,7 @@ app
   .use(bodyParser.urlencoded({extended: true}))
   .use(session({ secret: 'mysecret', resave: true, saveUninitialized: true }))
   .get('/hello/', r => r.res.end('Hello world!'))
-  .get('/author/', r => r.res.send('<h4 id="author" title="GossJS">KseniaVeh</h4>'))
+  .get('/author/', r => r.res.send('<h4 id="author" title="GossJS">stuklovao</h4>'))
   .get('/login', r => r.res.render('login'))
   .get('/logout', r => {
     r.session.auth = 'neok';
